@@ -4,6 +4,10 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
+    display: flex;             /* Utiliser Flexbox pour le body */
+    flex-direction: column;    /* Organiser les éléments en colonne */
+    min-height: 100vh;        /* Assurer que le body prend au moins toute la hauteur de la fenêtre */
 }
 
 header {
@@ -31,6 +35,7 @@ nav a {
 
 main {
     padding: 20px;
+    flex: 1;                  /* Permet au main de grandir pour occuper l'espace disponible */
 }
 
 section {
@@ -46,8 +51,8 @@ footer {
     padding: 1em 0;
     background-color: #333;
     color: white;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;  Supprimer le positionnement fixe */
+    /* bottom: 0;         Supprimer la position bottom */
     width: 100%;
 }
 
