@@ -50,3 +50,50 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+#cv-presentation {
+    display: block; /* Change display to block */
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cv-columns {
+    display: flex; /* Utilise Flexbox pour les colonnes */
+    justify-content: space-between; /* Espace entre les colonnes */
+}
+
+.cv-summary {
+    width: 48%; /* Largeur de la colonne de résumé (ajustez selon vos besoins) */
+    padding-right: 10px; /* Ajoute un peu d'espace à droite */
+    box-sizing: border-box;
+}
+
+.cv-viewer {
+    width: 48%; /* Largeur de la colonne de visualisation (ajustez) */
+    box-sizing: border-box;
+    /* height: 600px;  Hauteur fixe pour la visualisation (ajustez) */
+}
+
+.cv-summary h3, .cv-viewer h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Styles supplémentaires pour le contenu du résumé (facultatif) */
+.cv-summary p {
+    margin-bottom: 0.5em;
+}
+
+/* Styles pour l'intégration du PDF (à adapter selon la méthode d'affichage) */
+.cv-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
