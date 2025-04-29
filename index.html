@@ -29,8 +29,17 @@
 
         <section id="projets-recents">
             <h2>Projets Récents</h2>
-            <p>Cette section présentera bientôt mes projets les plus récents. Restez à l'écoute !</p>
-            </section>
+            <div class="projet">
+                <h3>Prédiction Boursière avec l'IA</h3>
+                <p>Développement d'un modèle de machine learning pour prédire les tendances boursières en utilisant des données historiques.</p>
+                <a href="projets/prediction-boursiere.html">En savoir plus</a>
+            </div>
+            <div class="projet">
+                <h3>Système Embarqué pour la Domotique</h3>
+                <p>Création d'un système embarqué pour automatiser les appareils domestiques via une application mobile.</p>
+                <a href="projets/domotique.html">En savoir plus</a>
+            </div>
+        </section>
 
         <section id="competences">
             <h2>Compétences</h2>
@@ -42,7 +51,31 @@
                 <li>Réseaux informatiques</li>
                 <li>Intelligence Artificielle et Machine Learning</li>
                 <li>Analyse de données</li>
-                </ul>
+            </ul>
+            <div class="competence-bar">
+                <p>Python</p>
+                <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="competence-bar">
+                <p>Machine Learning</p>
+                <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
 
