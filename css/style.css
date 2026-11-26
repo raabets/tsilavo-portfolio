@@ -124,3 +124,5 @@ footer { background: var(--dark); color: var(--light); padding: 22px 0; font-siz
   border: 1px solid var(--line); box-shadow: 0 2px 8px rgba(29, 79, 140, 0.12);
 }
 .shots-note { margin: 0 0 10px; }
+.shots img.wide { width: 430px; }
+@media (max-width: 760px) { .shots img.wide { width: 300px; } }
