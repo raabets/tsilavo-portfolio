@@ -14,7 +14,7 @@
     <a class="brand" href="#accueil">Tsilavo R.</a>
     <nav>
       <a href="#profil">Profil</a>
-      <a href="#projets">Projets</a>
+      <a href="#projets">Réalisations</a>
       <a href="#parcours">Parcours</a>
       <a href="#competences">Compétences</a>
       <a href="#contact">Contact</a>
@@ -28,11 +28,11 @@
     <div class="wrap">
       <p class="eyebrow">Antananarivo, Madagascar · Remote / hybride</p>
       <h1>Tsilavonianja <span>RAKOTONDRAMANGA</span></h1>
-      <p class="lead">Ingénieur infrastructure &amp; sécurité : systèmes, réseaux, cloud et SOC</p>
-      <p class="lead-sub">avec une casquette développement (Flutter, API, automatisation Python) et un doctorat en IA en cours</p>
-      <p class="hero-text">Depuis 2018, j'administre des infrastructures en production : supervision SOC 24/7, identités et cloud Microsoft, réseaux multisites jusqu'à la digitalisation de 10 sites aéroportuaires. J'automatise ce qui se répète, et je développe des applications quand le besoin l'exige.</p>
+      <p class="lead">Ingénieur infrastructure &amp; sécurité opérationnelle</p>
+      <p class="lead-sub">Systèmes, réseaux, cloud Microsoft et SOC 24/7, avec l'automatisation (Python, Ansible) comme levier</p>
+      <p class="hero-text">Depuis 2017, j'exploite des infrastructures en production : supervision SOC 24/7, identités et cloud Microsoft, réseaux multisites jusqu'à la digitalisation de 10 sites aéroportuaires. J'automatise ce qui se répète, et quand il faut un outil sur mesure, je le construis.</p>
       <div class="cta">
-        <a class="btn" href="#projets">Voir les projets</a>
+        <a class="btn" href="#projets">Voir les réalisations</a>
         <a class="btn ghost" href="CV_Tsilavonianja.pdf" target="_blank" rel="noopener">CV (PDF)</a>
       </div>
     </div>
@@ -60,7 +60,40 @@
 
   <section id="projets" class="block alt">
     <div class="wrap">
-      <h2>Projets</h2>
+      <h2>Réalisations</h2>
+
+      <h3 class="group">Infrastructure et sécurité</h3>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Digitalisation de 10 sites aéroportuaires</h3>
+          <span class="badge">ITEKNOLOJIA / ADEMA · mai 2026 – sept. 2026</span>
+        </div>
+        <p>Pilotage technique d'un programme de digitalisation couvrant 10 sites aéroportuaires, avec une exigence de sécurité alignée sur ISO 27001.</p>
+        <ul class="points">
+          <li><strong>Architecture :</strong> conception de l'architecture SI multisites.</li>
+          <li><strong>Cadrage :</strong> rédaction des cahiers des charges et du plan d'action opérationnel.</li>
+          <li><strong>Sécurité :</strong> contribution à la gouvernance SSI et à l'alignement ISO 27001.</li>
+        </ul>
+        <div class="tags"><span>Architecture multisites</span><span>Gouvernance SSI</span><span>ISO 27001</span><span>Cahier des charges</span></div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>SOC 24/7 et automatisation du poste de travail</h3>
+          <span class="badge">ETech Consulting · avr. 2024 – avr. 2026</span>
+        </div>
+        <p>Mise en place et exploitation d'une supervision sécurité continue, et industrialisation du déploiement des postes.</p>
+        <ul class="points">
+          <li><strong>Supervision :</strong> SOC 24/7, analyse de menaces et réponse aux incidents selon les engagements de niveau de service.</li>
+          <li><strong>Identités :</strong> Azure / Microsoft 365, Active Directory et Google Workspace, gouvernance des accès et durcissement des postes.</li>
+          <li><strong>Automatisation :</strong> déploiement des postes avec Python et Ansible, <strong>temps de mise en service réduit de 30 %</strong>.</li>
+        </ul>
+        <div class="tags"><span>Wazuh</span><span>Sekoia</span><span>MITRE ATT&amp;CK</span><span>Azure AD</span><span>Microsoft 365</span><span>Python</span><span>Ansible</span></div>
+      </article>
+
+      <h3 class="group">Outils et applications sur mesure</h3>
+
 
       <article class="project">
         <div class="project-head">
@@ -72,7 +105,7 @@
           <li><strong>Backend :</strong> WordPress utilisé comme CMS et API, avec des routes REST personnalisées (<code>/cepd/v1/…</code>) pour l'accueil, les cultes, les assemblées, les témoignages, les méditations, les vidéos et le verset du jour, des types de contenu sur mesure et une pagination côté serveur.</li>
           <li><strong>Application :</strong> Flutter / Dart, chargement « cache d'abord » avec rafraîchissement en arrière-plan, mode hors ligne, défilement infini.</li>
           <li><strong>Notifications :</strong> Firebase Cloud Messaging, déclenchées à la publication d'un contenu.</li>
-          <li><strong>Mon rôle :</strong> prestataire freelance. Recueil du besoin, développement, builds, Play Console, gestion des testeurs et relation client.</li>
+          <li><strong>Mon rôle :</strong> prestataire freelance, de bout en bout. Recueil du besoin, architecture (API, cache, notifications), validation et tests, builds, Play Console, gestion des testeurs et relation client. Code produit avec l'assistance d'outils d'IA, sous ma conception et ma validation.</li>
         </ul>
                 <div class="shots">
           <a href="img/cepd-site-accueil.webp" target="_blank" rel="noopener"><img class="wide" src="img/cepd-site-accueil.webp" alt="Page d'accueil du site cepd-madagascar.com" loading="lazy" width="800" height="499"></a>
@@ -96,6 +129,7 @@
           <li><strong>Recherche :</strong> plein texte avec SQLite FTS5, exécutée dans un isolate Dart pour ne pas bloquer l'interface.</li>
           <li><strong>Pipeline de données :</strong> scripts Python qui extraient et nettoient les textes depuis des PDF à deux colonnes (pdftotext, expressions régulières).</li>
           <li><strong>État :</strong> InheritedWidget et ChangeNotifier, sans librairie externe.</li>
+          <li><strong>Mon rôle :</strong> conception, spécification de l'interface et des données, préparation des sources, tests sur appareil et signature de l'APK. Code produit avec l'assistance d'outils d'IA, sous ma conception et ma validation.</li>
         </ul>
                 <div class="shots">
           <a href="img/baiboly-accueil.webp" target="_blank" rel="noopener"><img src="img/baiboly-accueil.webp" alt="Accueil de Baiboly" loading="lazy" width="540" height="960"></a>
@@ -112,6 +146,8 @@
         <div class="tags"><span>Flutter</span><span>SQLite</span><span>FTS5</span><span>Isolates</span><span>Python</span></div>
       </article>
 
+      <h3 class="group">Recherche</h3>
+
       <article class="project">
         <div class="project-head">
           <h3>Recherche : IA pour la protection des smart grids contre la foudre</h3>
@@ -122,7 +158,6 @@
         <div class="tags"><span>Intelligence artificielle</span><span>Smart grids</span><span>Systèmes embarqués</span><span>Python</span><span>Séries temporelles</span></div>
       </article>
 
-      <p class="disclaimer">Les projets de développement ont été conçus, spécifiés, testés et livrés par moi, avec l'assistance d'outils d'IA pour une partie du code.</p>
     </div>
   </section>
 
@@ -131,7 +166,7 @@
       <h2>Parcours</h2>
       <div class="timeline">
         <div class="item">
-          <span class="date">2026 · mission freelance</span>
+          <span class="date">2026 (mission freelance)</span>
           <h3>Développeur web &amp; mobile · CEPD Madagascar</h3>
           <p>Site WordPress avec API REST sur mesure et application Android Flutter avec notifications push, de la conception à la diffusion en test sur Google Play (voir <a href="#projets">Projets</a>).</p>
         </div>

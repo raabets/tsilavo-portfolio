@@ -126,3 +126,5 @@ footer { background: var(--dark); color: var(--light); padding: 22px 0; font-siz
 .shots-note { margin: 0 0 10px; }
 .shots img.wide { width: 430px; }
 @media (max-width: 760px) { .shots img.wide { width: 300px; } }
+h3.group { font-size: 15px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 8px 0 14px; }
+h3.group:not(:first-of-type) { margin-top: 34px; }
