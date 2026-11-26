@@ -43,7 +43,8 @@ a { color: var(--accent); }
 .eyebrow { color: #8fd3c8; font-size: 14px; letter-spacing: .04em; margin: 0 0 10px; }
 .hero h1 { color: #fff; font-size: 40px; line-height: 1.15; margin: 0 0 12px; }
 .hero h1 span { font-weight: 400; }
-.lead { font-size: 19px; color: #fff; margin: 0 0 18px; }
+.lead { font-size: 21px; color: #fff; margin: 0 0 4px; font-weight: 600; }
+.lead-sub { font-size: 16px; color: #b8c4d3; margin: 0 0 18px; }
 .hero-text { max-width: 680px; margin: 0 0 28px; }
 
 .cta { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -108,3 +109,4 @@ footer { background: var(--ink); color: #9fb0c4; padding: 22px 0; font-size: 14p
   .hero h1 { font-size: 30px; }
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
 }
+.note + .tags { margin-top: 10px; }

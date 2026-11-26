@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tsilavo RAKOTONDRAMANGA · Ingénieur Systèmes, Réseaux & Cloud</title>
+  <title>Tsilavo RAKOTONDRAMANGA · Ingénieur infrastructure & sécurité</title>
   <meta name="description" content="Ingénieur systèmes, réseaux et cloud, analyste SOC, développeur Flutter et doctorant en IA, basé à Antananarivo (Madagascar).">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,8 +28,9 @@
     <div class="wrap">
       <p class="eyebrow">Antananarivo, Madagascar · Remote / hybride</p>
       <h1>Tsilavonianja <span>RAKOTONDRAMANGA</span></h1>
-      <p class="lead">Ingénieur systèmes, réseaux &amp; cloud · Analyste SOC · Développeur Flutter · Doctorant en IA</p>
-      <p class="hero-text">Depuis 2018, j'administre des infrastructures en production, dont un environnement 24/7 avec supervision sécurité. En parallèle, je conçois des applications mobiles et des API, et je prépare un doctorat sur l'IA appliquée aux réseaux électriques intelligents.</p>
+      <p class="lead">Ingénieur infrastructure &amp; sécurité — systèmes, réseaux, cloud et SOC</p>
+      <p class="lead-sub">avec une casquette développement (Flutter, API, automatisation Python) et un doctorat en IA en cours</p>
+      <p class="hero-text">Depuis 2018, j'administre des infrastructures en production : supervision SOC 24/7, identités et cloud Microsoft, réseaux multisites jusqu'à la digitalisation de 10 sites aéroportuaires. J'automatise ce qui se répète, et je développe des applications quand le besoin l'exige.</p>
       <div class="cta">
         <a class="btn" href="#projets">Voir les projets</a>
         <a class="btn ghost" href="CV_Tsilavonianja.pdf" target="_blank" rel="noopener">CV (PDF)</a>
@@ -68,7 +69,7 @@
         </div>
         <p>Plateforme d'information pour une communauté chrétienne : actualités, événements, méditations quotidiennes, témoignages, cultes, vidéos et verset du jour, avec notifications push.</p>
         <ul class="points">
-          <li><strong>Backend :</strong> WordPress utilisé comme CMS et API, avec des routes REST personnalisées (<code>/cepd/v1/…</code>), des types de contenu sur mesure et une pagination côté serveur.</li>
+          <li><strong>Backend :</strong> WordPress utilisé comme CMS et API, avec des routes REST personnalisées (<code>/cepd/v1/…</code>) pour l'accueil, les cultes, les assemblées, les témoignages, les méditations, les vidéos et le verset du jour, des types de contenu sur mesure et une pagination côté serveur.</li>
           <li><strong>Application :</strong> Flutter / Dart, chargement « cache d'abord » avec rafraîchissement en arrière-plan, mode hors ligne, défilement infini.</li>
           <li><strong>Notifications :</strong> Firebase Cloud Messaging, déclenchées à la publication d'un contenu.</li>
           <li><strong>Mon rôle :</strong> prestataire freelance — recueil du besoin, développement, builds, Play Console, gestion des testeurs et relation client.</li>
@@ -82,9 +83,9 @@
           <h3>Baiboly &amp; Fihirana — application Android hors ligne</h3>
           <span class="badge">Projet personnel · en test</span>
         </div>
-        <p>Application de lecture de la Bible en malgache, avec comparaison français / anglais, recueils de cantiques, prières, favoris, surlignage et notes. Fonctionne entièrement sans connexion.</p>
+        <p>Application de lecture de la Bible en malgache avec comparaison de <strong>3 versions</strong> (malgache, français, anglais), <strong>4 recueils de cantiques</strong>, <strong>11 textes liturgiques</strong>, prières, favoris, surlignage et notes. Fonctionne entièrement sans connexion.</p>
         <ul class="points">
-          <li><strong>Données :</strong> trois bases SQLite séparées (textes bibliques, cantiques, données utilisateur).</li>
+          <li><strong>Données :</strong> trois bases SQLite séparées — textes bibliques (25 Mo), cantiques et liturgie, données utilisateur.</li>
           <li><strong>Recherche :</strong> plein texte avec SQLite FTS5, exécutée dans un isolate Dart pour ne pas bloquer l'interface.</li>
           <li><strong>Pipeline de données :</strong> scripts Python qui extraient et nettoient les textes depuis des PDF à deux colonnes (pdftotext, expressions régulières).</li>
           <li><strong>État :</strong> InheritedWidget et ChangeNotifier, sans librairie externe.</li>
@@ -94,11 +95,12 @@
 
       <article class="project">
         <div class="project-head">
-          <h3>Recherche — IA et prédiction des marchés</h3>
-          <span class="badge">Master Recherche</span>
+          <h3>Recherche — IA pour la protection des smart grids contre la foudre</h3>
+          <span class="badge">Doctorat · ESP Antananarivo · 2025 – en cours</span>
         </div>
-        <p>Mémoire de recherche sur l'application de modèles d'apprentissage automatique à la prédiction de séries temporelles boursières.</p>
-        <div class="tags"><span>Python</span><span>Machine Learning</span><span>Séries temporelles</span></div>
+        <p>Thèse sur l'application de l'intelligence artificielle à la protection des réseaux électriques intelligents contre les effets de la foudre, à la croisée de l'électronique, des systèmes embarqués et de l'apprentissage automatique.</p>
+        <p class="note">Travaux antérieurs : Master Recherche (2024 – 2025) sur l'IA appliquée à la prédiction de séries temporelles boursières.</p>
+        <div class="tags"><span>Intelligence artificielle</span><span>Smart grids</span><span>Systèmes embarqués</span><span>Python</span><span>Séries temporelles</span></div>
       </article>
 
       <p class="disclaimer">Les projets de développement ont été conçus, spécifiés, testés et livrés par moi, avec l'assistance d'outils d'IA pour une partie du code.</p>
