@@ -148,3 +148,7 @@ h3.group:not(:first-of-type) { margin-top: 34px; }
   .hero-grid { flex-direction: column-reverse; align-items: flex-start; gap: 24px; }
   .avatar { width: 130px; height: 130px; border-width: 4px; }
 }
+
+/* Boutons de contact avec icône (WhatsApp, Teams) */
+.btn-icon { display: inline-flex; align-items: center; gap: 8px; }
+.btn-icon .ico { width: 18px; height: 18px; flex: 0 0 auto; }
