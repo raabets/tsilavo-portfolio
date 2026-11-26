@@ -1,4 +1,4 @@
-# Portfolio — Tsilavonianja RAKOTONDRAMANGA
+# Portfolio : Tsilavonianja RAKOTONDRAMANGA
 
 Site personnel : https://raabets.github.io/tsilavo-portfolio/
 
