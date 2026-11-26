@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tsilavo RAKOTONDRAMANGA · Infrastructure & Security Engineer</title>
+  <meta name="description" content="Infrastructure and security operations engineer (systems, networks, Microsoft cloud, 24/7 SOC), based in Antananarivo, Madagascar.">
+  <link rel="alternate" hreflang="fr" href="https://raabets.github.io/tsilavo-portfolio/">
+  <link rel="alternate" hreflang="en" href="https://raabets.github.io/tsilavo-portfolio/en.html">
+  <link rel="alternate" hreflang="mg" href="https://raabets.github.io/tsilavo-portfolio/mg.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="#accueil">Tsilavo R.</a>
+    <nav>
+      <a href="#profil">Profile</a>
+      <a href="#projets">Work</a>
+      <a href="#parcours">Experience</a>
+      <a href="#competences">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="lang" aria-label="Language">
+      <a href="index.html" lang="fr">FR</a>
+      <a href="en.html" aria-current="page" lang="en">EN</a>
+      <a href="mg.html" lang="mg">MG</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="accueil" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-main">
+      <p class="eyebrow">Antananarivo, Madagascar · Remote / hybrid</p>
+      <h1>Tsilavonianja <span>RAKOTONDRAMANGA</span></h1>
+      <p class="lead">Infrastructure &amp; Security Operations Engineer</p>
+      <p class="lead-sub">Systems, networks, Microsoft cloud and 24/7 SOC, with automation (Python, Ansible) as a force multiplier</p>
+      <p class="hero-text">Since 2017, I have been running production infrastructure: 24/7 SOC monitoring, Microsoft identities and cloud, multi-site networks, up to the digital transformation of 10 airport sites. I automate what repeats, and when a custom tool is needed, I build it.</p>
+      <div class="cta">
+        <a class="btn" href="#projets">See my work</a>
+        <a class="btn ghost" href="CV_Tsilavonianja.pdf" target="_blank" rel="noopener">Résumé (PDF, French)</a>
+      </div>
+      </div>
+      <img class="avatar" src="img/photo-tsilavo.webp" alt="Photo of Tsilavonianja RAKOTONDRAMANGA" width="400" height="400">
+    </div>
+  </section>
+
+  <section id="profil" class="block">
+    <div class="wrap">
+      <h2>Profile</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Infrastructure &amp; security</h3>
+          <p>24/7 SOC monitoring (Wazuh, Sekoia), Azure / Microsoft 365 identity management, multi-site networks (Fortigate, SD-WAN, VPN), virtualization and automation with Ansible.</p>
+        </div>
+        <div class="card">
+          <h3>Development</h3>
+          <p>Flutter apps for Android, WordPress backends with custom REST APIs, Firebase notifications, Python scripts for automation and data processing.</p>
+        </div>
+        <div class="card">
+          <h3>AI research</h3>
+          <p>PhD in progress at ESP Antananarivo: AI applied to lightning protection in smart grids. Research Master's on AI applied to market prediction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets" class="block alt">
+    <div class="wrap">
+      <h2>Work</h2>
+
+      <h3 class="group">Infrastructure and security</h3>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Digital transformation of 10 airport sites</h3>
+          <span class="badge">ITEKNOLOJIA / ADEMA · May 2026 – Sep 2026</span>
+        </div>
+        <p>Technical lead on a digitalization program covering 10 airport sites, with security requirements aligned with ISO 27001.</p>
+        <ul class="points">
+          <li><strong>Architecture:</strong> design of the multi-site IT architecture.</li>
+          <li><strong>Scoping:</strong> writing the technical specifications and the operational action plan.</li>
+          <li><strong>Security:</strong> contribution to information security governance and ISO 27001 alignment.</li>
+        </ul>
+        <div class="tags"><span>Multi-site architecture</span><span>Security governance</span><span>ISO 27001</span><span>Technical specifications</span></div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>24/7 SOC and workstation automation</h3>
+          <span class="badge">ETech Consulting · Apr 2024 – Apr 2026</span>
+        </div>
+        <p>Set up and ran continuous security monitoring, and industrialized workstation deployment.</p>
+        <ul class="points">
+          <li><strong>Monitoring:</strong> 24/7 SOC, threat analysis and incident response under service-level agreements.</li>
+          <li><strong>Identity:</strong> Azure / Microsoft 365, Active Directory and Google Workspace, access governance and endpoint hardening.</li>
+          <li><strong>Automation:</strong> workstation deployment with Python and Ansible, <strong>provisioning time cut by 30%</strong>.</li>
+        </ul>
+        <div class="tags"><span>Wazuh</span><span>Sekoia</span><span>MITRE ATT&amp;CK</span><span>Azure AD</span><span>Microsoft 365</span><span>Python</span><span>Ansible</span></div>
+      </article>
+
+      <h3 class="group">Custom tools and applications</h3>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>CEPD Madagascar: website and Android app</h3>
+          <span class="badge">Client project · Google Play closed testing</span>
+        </div>
+        <p>Information platform for a Christian community: news, events, daily devotionals, testimonies, services, videos and verse of the day, with push notifications.</p>
+        <ul class="points">
+          <li><strong>Backend:</strong> WordPress used as CMS and API, with custom REST routes (<code>/cepd/v1/…</code>) for the home screen, services, congregations, testimonies, devotionals, videos and verse of the day, custom content types and server-side pagination.</li>
+          <li><strong>App:</strong> Flutter / Dart, cache-first loading with background refresh, offline mode, infinite scrolling.</li>
+          <li><strong>Notifications:</strong> Firebase Cloud Messaging, triggered when content is published.</li>
+          <li><strong>My role:</strong> freelance contractor, end to end. Requirements gathering, architecture (API, cache, notifications), validation and testing, builds, Play Console, tester management and client relationship. Code produced with AI assistance, under my design and review.</li>
+        </ul>
+        <div class="shots">
+          <a href="img/cepd-site-accueil.webp" target="_blank" rel="noopener"><img class="wide" src="img/cepd-site-accueil.webp" alt="Home page of cepd-madagascar.com" loading="lazy" width="800" height="499"></a>
+          <a href="img/cepd-site-actualites.webp" target="_blank" rel="noopener"><img class="wide" src="img/cepd-site-actualites.webp" alt="News section of the website" loading="lazy" width="800" height="499"></a>
+          <a href="img/cepd-accueil.webp" target="_blank" rel="noopener"><img src="img/cepd-accueil.webp" alt="CEPD app home screen" loading="lazy" width="540" height="960"></a>
+          <a href="img/cepd-actualites.webp" target="_blank" rel="noopener"><img src="img/cepd-actualites.webp" alt="News and verse of the day" loading="lazy" width="540" height="960"></a>
+          <a href="img/cepd-meditations.webp" target="_blank" rel="noopener"><img src="img/cepd-meditations.webp" alt="List of devotionals" loading="lazy" width="540" height="960"></a>
+        </div>
+        <div class="tags"><span>Flutter</span><span>Dart</span><span>WordPress</span><span>PHP</span><span>REST API</span><span>Firebase</span><span>Google Play</span></div>
+        <p class="note">Client code is not public. Website: <a href="https://cepd-madagascar.com" target="_blank" rel="noopener">cepd-madagascar.com</a></p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Baiboly &amp; Fihirana: offline Android app</h3>
+          <span class="badge">Personal project · in testing</span>
+        </div>
+        <p>Malagasy Bible reader comparing <strong>3 versions</strong> (Malagasy, French, English), with <strong>4 hymnals</strong>, <strong>11 liturgical texts</strong>, prayers, bookmarks, highlighting and notes. Works fully offline.</p>
+        <ul class="points">
+          <li><strong>Data:</strong> three separate SQLite databases: Bible texts (25 MB), hymns and liturgy, user data.</li>
+          <li><strong>Search:</strong> full-text with SQLite FTS5, run in a Dart isolate so the UI never blocks.</li>
+          <li><strong>Data pipeline:</strong> Python scripts that extract and clean texts from two-column PDFs (pdftotext, regular expressions).</li>
+          <li><strong>State:</strong> InheritedWidget and ChangeNotifier, no external library.</li>
+          <li><strong>My role:</strong> design, UI and data specification, source preparation, on-device testing and APK signing. Code produced with AI assistance, under my design and review.</li>
+        </ul>
+        <div class="shots">
+          <a href="img/baiboly-accueil.webp" target="_blank" rel="noopener"><img src="img/baiboly-accueil.webp" alt="Baiboly home screen" loading="lazy" width="540" height="960"></a>
+          <a href="img/baiboly-livres.webp" target="_blank" rel="noopener"><img src="img/baiboly-livres.webp" alt="List of Bible books" loading="lazy" width="540" height="960"></a>
+          <a href="img/baiboly-langues.webp" target="_blank" rel="noopener"><img src="img/baiboly-langues.webp" alt="Animation: switching from Malagasy to French to English, then side-by-side comparison" loading="lazy" width="540" height="960"></a>
+          <a href="img/baiboly-mg65.webp" target="_blank" rel="noopener"><img src="img/baiboly-mg65.webp" alt="Acts 2 in Malagasy (MG65)" loading="lazy" width="540" height="960"></a>
+          <a href="img/baiboly-lsg.webp" target="_blank" rel="noopener"><img src="img/baiboly-lsg.webp" alt="Acts 2 in French (Louis Segond 1910)" loading="lazy" width="540" height="960"></a>
+          <a href="img/baiboly-kjv.webp" target="_blank" rel="noopener"><img src="img/baiboly-kjv.webp" alt="Acts 2 in English (King James)" loading="lazy" width="540" height="960"></a>
+          <a href="img/baiboly-comparaison.webp" target="_blank" rel="noopener"><img src="img/baiboly-comparaison.webp" alt="Verse-by-verse comparison of the three versions" loading="lazy" width="540" height="960"></a>
+          <a href="img/baiboly-fihirana.webp" target="_blank" rel="noopener"><img src="img/baiboly-fihirana.webp" alt="Hymnal with number pad" loading="lazy" width="540" height="960"></a>
+          <a href="img/baiboly-recherche.webp" target="_blank" rel="noopener"><img src="img/baiboly-recherche.webp" alt="Full-text search" loading="lazy" width="540" height="960"></a>
+        </div>
+        <p class="note shots-note">Switch languages in one tap: Malagasy (MG65), French (Louis Segond 1910), English (King James), or all three verses side by side.</p>
+        <div class="tags"><span>Flutter</span><span>SQLite</span><span>FTS5</span><span>Isolates</span><span>Python</span></div>
+      </article>
+
+      <h3 class="group">Research</h3>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Research: AI for lightning protection in smart grids</h3>
+          <span class="badge">PhD · ESP Antananarivo · 2025 – present</span>
+        </div>
+        <p>Thesis on applying artificial intelligence to protect smart electrical grids against the effects of lightning, at the crossroads of electronics, embedded systems and machine learning.</p>
+        <p class="note">Earlier work: Research Master's (2024 – 2025) on AI applied to stock-market time-series prediction.</p>
+        <div class="tags"><span>Artificial intelligence</span><span>Smart grids</span><span>Embedded systems</span><span>Python</span><span>Time series</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="parcours" class="block">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="item">
+          <span class="date">2026 (freelance)</span>
+          <h3>Web &amp; mobile developer · CEPD Madagascar</h3>
+          <p>WordPress site with a custom REST API and a Flutter Android app with push notifications, from design to Google Play testing (see <a href="#projets">Work</a>).</p>
+        </div>
+        <div class="item">
+          <span class="date">May 2026 – Sep 2026</span>
+          <h3>Systems &amp; network administrator · ITEKNOLOJIA / ADEMA</h3>
+          <p>Technical lead on the digitalization of 10 airport sites: multi-site IT architecture, technical specifications, operational action plan, contribution to security governance and ISO 27001 alignment.</p>
+        </div>
+        <div class="item">
+          <span class="date">Sep 2025 – 2026</span>
+          <h3>IT &amp; security administrator (consulting) · EMS Build Madagascar</h3>
+          <p>Microsoft 365 and site-to-site VPN rollout, network security, L1/L2 user support.</p>
+        </div>
+        <div class="item">
+          <span class="date">Apr 2024 – Apr 2026</span>
+          <h3>Systems &amp; network administrator, SOC &amp; infrastructure · ETech Consulting</h3>
+          <p>Set up 24/7 SOC monitoring, threat analysis and SLA-based incident response. Administered Azure / Microsoft 365, Active Directory and Google Workspace. Automated workstation deployment with Python and Ansible: <strong>30% faster provisioning</strong>.</p>
+        </div>
+        <div class="item">
+          <span class="date">Nov 2018 – Nov 2023</span>
+          <h3>IT engineer, support &amp; infrastructure · Sagemcom Madagascar</h3>
+          <p>Workstation, server and network incidents in an industrial environment, ISO 9001 / ISO 45001 procedures, digitalization and connectivity projects.</p>
+        </div>
+        <div class="item">
+          <span class="date">Aug 2017 – Nov 2018</span>
+          <h3>IT &amp; industrial technician · Savonnerie Tropicale</h3>
+          <p>Monitoring, maintenance and handling of critical incidents to ensure business continuity.</p>
+        </div>
+      </div>
+
+      <h3 class="sub">Education</h3>
+      <ul class="edu">
+        <li><strong>PhD in AI &amp; embedded systems</strong> (2025 – present), AI applied to lightning protection in smart grids · ESP Antananarivo</li>
+        <li><strong>Research Master's in AI &amp; embedded systems</strong> (2024 – 2025), thesis on AI applied to market prediction · ESP Antananarivo</li>
+        <li><strong>Engineering degree in Electronics and Industrial Computing (5-year)</strong> · ESP Antsiranana, 2017</li>
+        <li><strong>Continuing education:</strong> ISO 14001:2015 (2026); self-study in ISO 27001:2022, ITIL, Terraform, Azure fundamentals</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="competences" class="block alt">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Security &amp; SOC</h3>
+          <div class="tags"><span>24/7 SOC</span><span>Wazuh</span><span>Sekoia</span><span>HarfangLab</span><span>MITRE ATT&amp;CK</span><span>Incident response</span><span>ISO 27001</span><span>ITIL</span></div>
+        </div>
+        <div>
+          <h3>Identity, cloud &amp; endpoints</h3>
+          <div class="tags"><span>Azure AD</span><span>Microsoft 365</span><span>Intune</span><span>Active Directory</span><span>Google Workspace</span><span>MFA / SSO</span><span>Hardening</span></div>
+        </div>
+        <div>
+          <h3>Networking &amp; virtualization</h3>
+          <div class="tags"><span>Fortigate</span><span>WatchGuard</span><span>Cisco</span><span>MikroTik</span><span>SD-WAN</span><span>IPsec / OpenVPN</span><span>Proxmox</span><span>VMware</span><span>Hyper-V</span></div>
+        </div>
+        <div>
+          <h3>Automation &amp; monitoring</h3>
+          <div class="tags"><span>Python</span><span>Bash</span><span>Ansible</span><span>Docker</span><span>Git</span><span>Jenkins</span><span>Zabbix</span><span>Prometheus</span><span>Grafana</span></div>
+        </div>
+        <div>
+          <h3>Development</h3>
+          <div class="tags"><span>Flutter / Dart</span><span>WordPress</span><span>PHP</span><span>REST API</span><span>Firebase</span><span>SQLite</span><span>MySQL</span></div>
+        </div>
+        <div>
+          <h3>AI &amp; data</h3>
+          <div class="tags"><span>Machine learning</span><span>Time series</span><span>Data processing</span><span>Python</span></div>
+        </div>
+      </div>
+      <p class="langs"><strong>Languages:</strong> Malagasy (native), French (fluent), English (professional)</p>
+    </div>
+  </section>
+
+  <section id="contact" class="block">
+    <div class="wrap contact">
+      <h2>Contact</h2>
+      <p>Open to remote or hybrid roles and contracts.</p>
+      <div class="cta">
+        <a class="btn" href="mailto:tsilavonianja@gmail.com">tsilavonianja@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/tsilavo-rakotondramanga/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/raabets" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Tsilavonianja RAKOTONDRAMANGA</div>
+</footer>
+
+</body>
+</html>
