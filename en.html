@@ -261,7 +261,7 @@
         <a class="btn ghost" href="https://www.linkedin.com/in/tsilavo-rakotondramanga/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn ghost" href="https://github.com/raabets" target="_blank" rel="noopener">GitHub</a>
         <a class="btn ghost btn-icon" href="https://wa.me/261347653203" target="_blank" rel="noopener" aria-label="Message on WhatsApp" title="Message on WhatsApp"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.9 3 3 6.6 3 11c0 2.3 1.1 4.4 2.9 5.9L5 21l4.3-2.2c.9.2 1.8.3 2.7.3 5.1 0 9-3.6 9-8S17.1 3 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>WhatsApp</span></a>
-        <a class="btn ghost btn-icon" href="https://teams.microsoft.com/l/chat/0/0?users=tsilavo.rakotondramanga@outlook.com" target="_blank" rel="noopener" aria-label="Chat on Teams" title="Chat on Teams"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="12" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15 10.5l5-3v9l-5-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>Teams</span></a>
+        <a class="btn ghost btn-icon" href="#contact" data-t="bW9jLmtvb2x0dW9AYWduYW1hcmRub3Rva2FyLm92YWxpc3Q=" aria-label="Chat on Teams" title="Chat on Teams"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="12" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15 10.5l5-3v9l-5-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>Teams</span></a>
       </div>
     </div>
   </section>
@@ -272,5 +272,15 @@
   <div class="wrap">© 2026 Tsilavonianja RAKOTONDRAMANGA</div>
 </footer>
 
+<script>
+  /* Lien Teams : l'adresse n'est pas écrite en clair dans la page, elle est reconstituée au clic */
+  document.querySelectorAll('a[data-t]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var u = atob(a.getAttribute('data-t')).split('').reverse().join('');
+      window.open('https://teams.microsoft.com/l/chat/0/0?users=' + encodeURIComponent(u), '_blank', 'noopener');
+    });
+  });
+</script>
 </body>
 </html>
